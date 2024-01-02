@@ -1,7 +1,7 @@
-<dcrgraph title="DCR Task 2" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false">
+<dcrgraph title="DCR Task 2" dataTypesStatus="hide" filterLevel="-1" insightFilter="false" zoomLevel="0" formGroupStyle="Normal" formLayoutStyle="Horizontal" formShowPendingCount="true" graphBG="#f1f6fe" graphType="0" exercise="false" version="1.0">
     <meta>
-        <graph id="1704880" hash="6967E0D3D7C28EE4168D1F29BDFE82AF" guid="05D26BA7-2EEC-408B-A73F-7404F1645AB9" OwnerName="Albert Friis-Hansen" OwnerId="150336" categoryId="8473" categoryTitle="Default" Keywords=""/>
-        <revision id="3561121" type="minor" date="2023-12-24T12:24:09.880"/>
+        <graph id="1704880" hash="BAA934522F05ED3D080581900C7D399A" guid="05D26BA7-2EEC-408B-A73F-7404F1645AB9" OwnerName="Albert Friis-Hansen" OwnerId="150336" categoryId="8473" categoryTitle="Default" Keywords=""/>
+        <revision id="3562987" type="minor" date="2024-01-02T14:11:48.703"/>
         <organization id="1" name="Community" type="Demonstration"/>
     </meta>
     <specification>
@@ -632,7 +632,11 @@
                 </graphFilters>
                 <hightlighterMarkup id="HLM"/>
                 <highlighterMarkup>
-                    <highlightLayers/>
+                    <highlightLayers>
+                        <highlightLayer default="true" name="description">
+                            <![CDATA[DCR Process]]>
+                        </highlightLayer>
+                    </highlightLayers>
                     <highlights/>
                 </highlighterMarkup>
             </custom>
@@ -640,6 +644,9 @@
         <constraints>
             <conditions>
                 <condition sourceId="Activity10" targetId="Activity11" filterLevel="1" description="" time="" groups=""/>
+                <condition sourceId="Activity0" targetId="Activity4" filterLevel="1" description="" time="" groups="" link="Activity0--condition--Activity4"/>
+                <condition sourceId="Activity0" targetId="Activity1" filterLevel="1" description="" time="" groups="" link="Activity0--condition--Activity1"/>
+                <condition sourceId="Activity0" targetId="Activity2" filterLevel="1" description="" time="" groups="" link="Activity0--condition--Activity2"/>
             </conditions>
             <responses>
                 <response sourceId="Activity0" targetId="Activity4" filterLevel="1" description="" time="" groups=""/>
@@ -681,8 +688,14 @@
             </excludes>
             <includes>
                 <include sourceId="Activity11" targetId="Activity10" filterLevel="1" description="" time="" groups=""/>
+                <include sourceId="Activity7" targetId="Activity10" filterLevel="1" description="" time="" groups=""/>
+                <include sourceId="Activity12" targetId="Activity13" filterLevel="1" description="" time="" groups=""/>
             </includes>
-            <milestones/>
+            <milestones>
+                <milestone sourceId="Activity0" targetId="Activity4" filterLevel="1" description="" time="" groups="" link="Activity0--condition--Activity4"/>
+                <milestone sourceId="Activity0" targetId="Activity1" filterLevel="1" description="" time="" groups="" link="Activity0--condition--Activity1"/>
+                <milestone sourceId="Activity0" targetId="Activity2" filterLevel="1" description="" time="" groups="" link="Activity0--condition--Activity2"/>
+            </milestones>
             <updates/>
             <spawns/>
             <templateSpawns/>
@@ -714,9 +727,7 @@
                 <event id="Activity15"/>
                 <event id="Activity16"/>
             </included>
-            <pendingResponses>
-                <event id="Activity0"/>
-            </pendingResponses>
+            <pendingResponses/>
         </marking>
     </runtime>
 </dcrgraph>
