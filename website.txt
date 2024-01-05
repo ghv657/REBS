@@ -1,0 +1,60 @@
+Fill out application(0,0,0)
+Lawyer Review(0,0,0)
+Architect Review(0,0,0)
+Change phase to Abandon(0,0,0)
+Execute abandon(0,0,0)
+Approve(0,0,0)
+Reject(0,0,0)
+Approve changed account(0,0,0)
+Account number changed(0,0,0)
+Change Phase to payout(0,0,0)
+First payment(0,0,0)
+Undo payment(0,0,0)
+Change phase to aborted(0,0,0)
+Applicant informed(0,0,0)
+Change Phase to End Report(0,0,0)
+Receive end report(0,0,0)
+Change phase to Complete(0,0,0)
+Fill out application --> Execute abandon
+Fill out application --> Lawyer review
+Fill out application --> Architect Review
+Lawyer review --> Approve
+Lawyer review --> Reject
+Architect Review --> Approve
+Architect Review --> Reject
+Reject --> Applicant informed
+Reject --> Change phase to aborted
+Approve --> Account number changed
+Execute abandon --> Change phase to abandon
+Receive end report --> Change phase to completed
+Account number changed --> Approve changed account
+Approve changed account --> Change phase to payout
+Change phase to payout --> First payment
+First payment --> Change phase to end report
+Change phase to end report --> First payment
+Change phase to end report --> Receive end report
+Execute abandon --% Fill out application
+Lawyer review --% Fill out application
+Architect Review --% Fill out application
+Lawyer review --% Architect Review
+Architect Review --% Lawyer review
+Reject --% Approve
+Approve --% Reject
+Execute abandon --% Approve
+Receive end report --% Execute abandon
+Execute abandon --% Receive end report
+Account number changed --% First payment
+First payment --% First payment
+Change phase to payout --% Change phase to end report
+Execute abandon --% Change phase to end report
+Execute abandon --% Change phase to payout
+Undo Payment --><> First payment
+Approve changed account --><> First payment
+Change phase to aborted --><> Applicant informed
+Fill out application --><> Execute abandon
+Fill out application --><> Lawyer review
+Fill out application --><> Architect Review
+First payment -->* Undo Payment
+Fill out application -->* Execute abandon
+Fill out application -->* Lawyer review
+Fill out application -->* Architect Review
