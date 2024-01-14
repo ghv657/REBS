@@ -4,7 +4,7 @@ app_shipper = Flask(__name__)
 
 @app_shipper.route('/order', methods=['POST'])
 def order():
-    data = "Some invoice details"  # This is a placeholder; you can modify as needed
+    data = "(Your order has been shipped)"  
     return jsonify({"details": data}), 200
 
 if __name__ == '__main__':
