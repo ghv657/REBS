@@ -1,0 +1,11 @@
+# General comments
+
+You are getting it passed in order to go to the exam, but you have quite a bit of work to do in preparation.
+Part 1:
+  You have misunderstood all of part 1. Thomas has uploaded his slides from the the lecture friday, read these and also Lecture 5. Especially slide 26 and 28 for the CCS definitions and transitions.
+  The Interface should be equivalent to the version of the Computer scientist and coffee. It is not the information send, but the channels they are send on that should be shown.
+Part 2:
+  Task 1: Good, but your shipper can send details2buy before receiving an order. The same is the case with the seller. Things should be excluded or have a condition.
+  Task 2: The code does not seem to be reactive. You just print things when executing things. Your implementation should relate to CCS, which transitions happen, and how does the actors change state in your program according to this. It is also very hard to understand your screenshots. It does not show the transitions, it does not show that the the seller is asking for a price and receiving information.
+  Task 3: It seems that you are running all the operations, rather than having the code do it. So there is nothing reactive on this.
+  Task 4: Same as task 3

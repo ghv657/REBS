@@ -1,0 +1,21 @@
+# General comments
+
+Part 1:
+  Task 1: Good
+  Task 2: Good
+  Task 3: 
+    1: Good
+    2: Your petri net is neither bounded nor safe and not for the reason you give.
+    Your petrinet is not bounded, since 'First payment' has an AND transition to 'payment completed' and 'payment invalid', following the second route through 'payment undone' it is possible to place unlimited tokens in 'payment complete'.
+    3: A workflow only has a single end point, check slide 53 from lecture 1 for more info.
+Part 2:
+  Task 1: 
+    Rule 1: Your rule one states that IF 'Fill out application' happens, then 'other events' must happen and that 'Fill out application' must happen eventually. Not that it should be first.
+    Rule 5: When running 'account number changed' you exclude 'first payment' but never include it again, so it can never be executed subsequently.
+    Rule 7: Your trace will never end you have a cycle of pendings.
+    Rule 8: 'Change phase to abandon' is already enabled, so the include condition has no effect.
+  Task 2: Check the comments in task 1 and consider using them to update the graphs for the exam.
+  Task 3: 
+    1: of the ones you didn't use, which have you been taught, why didn't you use the one of them that you learned? (you answer this in T2, but is relevant here also)
+    2: Good. Would a milestone work, would a valid trace be not executing any activities?
+    3: Can a petri net model all DCR graphs? The order of transitions in DCR graphs and petri nets are they the same?
